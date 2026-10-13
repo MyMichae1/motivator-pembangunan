@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MPM Indonesia - Yayasan Motivator Pembangunan Masyarakat">
+  <title>MPM - Yayasan Motivator Pembangunan Masyarakat</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom CSS -->
+   
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <!-- Tailwind Config Override (to match the design system) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1B6B2F',
+            dark: '#145224',
+            light: '#E8F5E9',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="antialiased text-gray-800 bg-gray-50">
+
+  <div id="site-header"></div>
+
+  <!-- Hero Section (Carousel) -->
+  <section class="hero relative bg-dark text-white min-h-[85vh] flex items-center overflow-hidden">
+    
+    <!-- Slider Container -->
+    <div id="hero-slider" class="hero-slider absolute inset-0 w-full h-full">
+      <div id="hero-slides-container" class="w-full h-full relative">
+        <!-- Slides will be injected here via JavaScript -->
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button id="hero-prev" class="hero-prev absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-30 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-black/20 hover:bg-primary text-white rounded-full transition-all backdrop-blur-sm border border-white/20 focus:outline-none" aria-label="Slide sebelumnya">
+      <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+    </button>
+    <button id="hero-next" class="hero-next absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-30 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-black/20 hover:bg-primary text-white rounded-full transition-all backdrop-blur-sm border border-white/20 focus:outline-none" aria-label="Slide berikutnya">
+      <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+    </button>
+
+    <!-- Indicators -->
+    <div id="hero-indicators" class="hero-indicators absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-3">
+      <!-- Dots will be injected here via JavaScript -->
+    </div>
+  </section>
+
+  <!-- About Teaser -->
+  <section class="about-teaser home-about-transition py-20 md:py-24 relative bg-gray-50">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        <div class="about-teaser__visual w-full lg:w-1/2">
+          <div class="about-teaser__collage">
+            <img src="https://penamasmotivator.org/wp-content/uploads/2026/05/MPM04050-768x512.jpg.webp" alt="Kegiatan MPM bersama masyarakat" class="about-teaser__main-image">
+            <img src="https://penamasmotivator.org/wp-content/uploads/2026/04/IMG_20260423_1121341-scaled-e1777008724756-768x507.jpg.webp" alt="Lahan pertanian dampingan MPM di Toraja" class="about-teaser__overlay-image">
+          </div>
+        </div>
+        <div class="about-teaser__content w-full lg:w-1/2">
+          <p class="about-teaser__eyebrow">TENTANG KAMI</p>
+          <h2 class="about-teaser__title">Mewujudkan Masyarakat<br class="hidden xl:block"> Mandiri dan Berkelanjutan</h2>
+          <p class="about-teaser__description">
+            Yayasan Motivator Pembangunan Masyarakat adalah organisasi nonpemerintah yang berkedudukan di Kondoran, Sangalla', Tana Toraja, Sulawesi Selatan. Kami bekerja bersama masyarakat untuk membangun kehidupan yang lebih mandiri, tangguh, dan berkelanjutan melalui pertanian, pembangunan perdamaian, pendidikan, serta pelestarian lingkungan.
+          </p>
+          <ul class="about-teaser__highlights">
+            <li>
+              <svg aria-hidden="true" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1.667a8.333 8.333 0 1 0 0 16.666 8.333 8.333 0 0 0 0-16.666Zm3.72 6.22a.833.833 0 0 0-1.273-1.074l-3.39 4.02-1.548-1.548a.833.833 0 0 0-1.178 1.178l2.19 2.19a.833.833 0 0 0 1.225-.052l3.974-4.714Z" clip-rule="evenodd"/></svg>
+              <span>Dampak di bidang pertanian, perdamaian, dan ekologi</span>
+            </li>
+            <li>
+              <svg aria-hidden="true" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1.667a8.333 8.333 0 1 0 0 16.666 8.333 8.333 0 0 0 0-16.666Zm3.72 6.22a.833.833 0 0 0-1.273-1.074l-3.39 4.02-1.548-1.548a.833.833 0 0 0-1.178 1.178l2.19 2.19a.833.833 0 0 0 1.225-.052l3.974-4.714Z" clip-rule="evenodd"/></svg>
+              <span>Mitigasi dan adaptasi perubahan iklim</span>
+            </li>
+          </ul>
+          <a href="pages/tentang.html" class="btn btn-outline about-teaser__button">Selengkapnya <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="home-decorative-divider" aria-hidden="true">
+    <img src="assets/elements/element%201.png" alt="" loading="lazy">
+  </div>
+
+  <!-- Programs -->
+  <section class="home-programs-transition py-24 bg-white/50 pattern-bg">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <div class="home-carousel" data-home-carousel>
+        <header class="home-carousel__header">
+          <div class="home-carousel__copy">
+            <h4 class="text-primary font-bold tracking-wider uppercase text-sm mb-2">Fokus Program</h4>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Program Unggulan MPM</h2>
+            <p class="text-gray-600 text-lg">Melalui kemitraan strategis, kami menerapkan program terpadu pemberdayaan ekonomi, pertanian organik, manajemen bencana, dan konservasi.</p>
+          </div>
+          <div class="home-carousel__controls" aria-label="Navigasi program unggulan">
+            <button class="home-carousel__nav" type="button" data-carousel-prev aria-label="Program sebelumnya" disabled>‹</button>
+            <button class="home-carousel__nav" type="button" data-carousel-next aria-label="Program berikutnya">›</button>
+          </div>
+        </header>
+
+        <div class="home-carousel__viewport" data-home-carousel-viewport role="region" aria-label="Daftar program unggulan" tabindex="0">
+          <div class="home-carousel__track" data-home-carousel-track>
+        <!-- Program 1 -->
+        <div class="program-card bg-white shadow-lg hover:-translate-y-2 group">
+          <div class="program-card__media">
+            <img src="https://penamasmotivator.org/wp-content/uploads/2025/08/DSC5773_Lohnes-1024x618.jpg.webp" class="program-card__image" loading="lazy">
+            <span class="program-card__fallback" role="img" aria-label="Dokumentasi program Pembangunan Perdamaian" hidden>Dokumentasi Pembangunan Perdamaian</span>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Peacebuilding</h3>
+          <p class="text-gray-600 mb-6">Kami merawat ruang hidup bersama agar masyarakat dapat membangun kepercayaan, bekerja lintas perbedaan, dan menyelesaikan persoalan dengan damai.</p>
+          <a href="/pages/program/peacebuilding.html" class="inline-flex items-center text-primary font-semibold hover:text-dark">Pelajari <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></a>
+        </div>
+
+        <!-- Program 2 -->
+        <div class="program-card bg-white shadow-lg hover:-translate-y-2 group">
+          <div class="program-card__media">
+            <img src="https://penamasmotivator.org/wp-content/uploads/2026/04/IMG_20260423_0956511-768x1024.jpg.webp" alt="Pelatihan kesiapsiagaan bencana bersama masyarakat" class="program-card__image" loading="lazy">
+            <span class="program-card__fallback" role="img" aria-label="Dokumentasi program Risiko Bencana dan Iklim" hidden>Dokumentasi Risiko Bencana &amp; Iklim</span>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Light House Project (LHP)</h3>
+          <p class="text-gray-600 mb-6">Kami memahami LHP sebagai proyek terdahulu yang berkaitan dengan pendampingan petani kecil dan penguatan ketahanan pertanian dataran tinggi terhadap perubahan iklim.</p>
+          <a href="/pages/program/light-house-project.html" class="inline-flex items-center text-primary font-semibold hover:text-dark">Pelajari <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></a>
+        </div>
+
+        <!-- Program 3 -->
+        <div class="program-card bg-white shadow-lg hover:-translate-y-2 group">
+          <div class="program-card__media">
+            <img src="https://penamasmotivator.org/wp-content/uploads/2025/08/C5719T01-1024x576.jpg.webp" class="program-card__image" loading="lazy">
+            <span class="program-card__fallback" role="img" aria-label="Dokumentasi program Sekolah Lapangan Iklim" hidden>Dokumentasi Sekolah Lapangan Iklim</span>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">RYCAM</h3>
+          <p class="text-gray-600 mb-6">Rural Youth Climate Action Movement memberdayakan generasi muda pedesaan, khususnya perempuan, untuk memperkuat pertanian berkelanjutan, ketahanan pangan, dan aksi iklim.</p>
+          <a href="/pages/program/rycam.html" class="inline-flex items-center text-primary font-semibold hover:text-dark">Pelajari <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></a>
+        </div>
+
+        <!-- Program EMS -->
+        <div class="program-card bg-white shadow-lg hover:-translate-y-2 group">
+          <div class="program-card__media">
+            <img src="https://img.inews.co.id/files/networks/2024/05/21/fad65_getor.jpg" alt="Kegiatan EMS terkait solidaritas dan pembangunan masyarakat" class="program-card__image" loading="lazy">
+            <span class="program-card__fallback" role="img" aria-label="Dokumentasi program EMS" hidden>Dokumentasi program EMS</span>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">EMS (Evangelical Mission in Solidarity)</h3>
+          <p class="text-gray-600 mb-6">Persekutuan internasional gereja-gereja Injili dan lembaga misi yang mendukung pelayanan sosial, pendidikan, kesehatan, perdamaian, dan pembangunan masyarakat.</p>
+          <a href="pages/program/ems.html" class="inline-flex items-center text-primary font-semibold hover:text-dark">Pelajari <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></a>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dari Lapangan: Kegiatan Kami -->
+  <section class="field-stories" data-field-stories="field-activities" aria-labelledby="field-activities-title">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <header class="field-stories__header">
+        <div>
+          <p class="field-stories__eyebrow">DARI LAPANGAN</p>
+          <h2 class="field-stories__title" id="field-activities-title">Kegiatan Kami di Lapangan</h2>
+          <p class="field-stories__intro">Melihat kegiatan dan kolaborasi kami bersama masyarakat di Toraja.</p>
+        </div>
+        <div class="field-stories__controls" aria-label="Navigasi kegiatan lapangan">
+          <button class="field-stories__nav" type="button" data-story-prev aria-label="Kegiatan sebelumnya">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m15 18-6-6 6-6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="field-stories__nav" type="button" data-story-next aria-label="Kegiatan berikutnya">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m9 18 6-6-6-6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </header>
+      <div class="field-stories__grid" data-story-grid></div>
+    </div>
+  </section>
+
+  <!-- Mitra MPM -->
+  <section class="partners-section">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <div class="text-center max-w-3xl mx-auto mb-8">
+        <h2 class="text-3xl font-bold text-gray-900">Mitra & Kolaborator MPM</h2>
+        <p class="mt-4 text-gray-600 leading-relaxed">MPM bekerja sama dengan berbagai mitra nasional dan internasional untuk memperkuat kapasitas masyarakat, mendorong ketahanan iklim, serta mendukung pembangunan berkelanjutan.</p>
+      </div>
+      <div class="partner-carousel">
+        <div class="partner-logo-track">
+          <div class="partner-grid">
+        <!-- Partner 1 -->
+        <a href="https://jamtani.or.id/" target="_blank" rel="noopener noreferrer" class="partner-logo-link" aria-label="Kunjungi Jamtani Indonesia">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8gP6g15Mwn3ZLg6moWLp--L-xAA-e_YLi0r_r7mwANg&s=10" alt="Jamtani Indonesia" class="partner-logo" loading="lazy">
+        </a>
+        <!-- Partner 2 -->
+        <a href="https://rycam.id/" target="_blank" rel="noopener noreferrer" class="partner-logo-link" aria-label="Kunjungi RYCAM">
+          <img src="https://rycam.id/wp-content/uploads/2024/09/ico.ico" alt="RYCAM" class="partner-logo" loading="lazy">
+        </a>
+        <!-- Partner 3 -->
+        <a href="https://www.agrar.hu-berlin.de/de" target="_blank" rel="noopener noreferrer" class="partner-logo-link" aria-label="Kunjungi Humboldt-Universität zu Berlin">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiM-K_w_RbhTfHk8Aw4pZBPoga971dc69le0YZaV-1jg&s=10" alt="Humboldt-Universität zu Berlin" class="partner-logo" loading="lazy">
+        </a>
+        <!-- Partner 4 -->
+        <a href="https://www.sle-berlin.de/index.php/en/" target="_blank" rel="noopener noreferrer" class="partner-logo-link" aria-label="Kunjungi SLE Center for Rural Development">
+          <img src="https://weadapt.org/wp-content/uploads/2023/05/sle_logo_3c.jpg" alt="Center for Rural Development (SLE)" class="partner-logo partner-logo--sle" loading="lazy">
+          <img src="data:image/jpeg;base64,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" alt="SLE Berlin" class="w-full h-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity">
+        </a>
+         <a href="https://ems-online.org/en/media" target="_blank" rel="noopener noreferrer" class="partner-logo-link" aria-label="Kunjungi EMS media">
+          <img src="https://mission-weltweit.de/en/assets/image-cache/content/img/mitglieder/logo_ems.5a45595d.png" alt="Evangelical Mission in Solidarity (EMS)" class="partner-logo" loading="lazy" style="object-fit: contain;">
+        </a>
+        <!-- International Climate Initiative -->
+        <a href="https://www.international-climate-initiative.com/en/indonesia/" target="_blank" rel="noopener noreferrer" class="partner-logo-link" aria-label="Kunjungi International Climate Initiative Indonesia">
+          <img src="/assets/images/IKI logo.png" alt="International Climate Initiative (IKI)" class="partner-logo partner-logo--iki" loading="lazy">
+        </a>
+          </div>
+          <div class="partner-grid" aria-hidden="true" inert>
+            <a href="https://jamtani.or.id/" target="_blank" rel="noopener noreferrer" class="partner-logo-link" tabindex="-1">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8gP6g15Mwn3ZLg6moWLp--L-xAA-e_YLi0r_r7mwANg&s=10" alt="" class="partner-logo" loading="eager">
+            </a>
+            <a href="https://rycam.id/" target="_blank" rel="noopener noreferrer" class="partner-logo-link" tabindex="-1">
+              <img src="https://rycam.id/wp-content/uploads/2024/09/ico.ico" alt="" class="partner-logo" loading="eager">
+            </a>
+            <a href="https://www.agrar.hu-berlin.de/de" target="_blank" rel="noopener noreferrer" class="partner-logo-link" tabindex="-1">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiM-K_w_RbhTfHk8Aw4pZBPoga971dc69le0YZaV-1jg&s=10" alt="" class="partner-logo" loading="eager">
+            </a>
+            <a href="https://www.sle-berlin.de/index.php/en/" target="_blank" rel="noopener noreferrer" class="partner-logo-link" tabindex="-1">
+              <img src="https://weadapt.org/wp-content/uploads/2023/05/sle_logo_3c.jpg" alt="" class="partner-logo partner-logo--sle" loading="eager">
+            </a>
+            <a href="https://www.international-climate-initiative.com/en/indonesia/" target="_blank" rel="noopener noreferrer" class="partner-logo-link" tabindex="-1">
+              <img src="https://www.international-climate-initiative.com/_assets/586c2e293803aaedc627d58ec1875a9b/Images/logo-iki-en.svg" alt="" class="partner-logo partner-logo--iki" loading="eager">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA section -->
+  <!-- <section class="py-20 bg-primary relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid)" />
+      </svg>
+    </div>
+    <div class="container mx-auto px-4 relative z-10 max-w-4xl text-center">
+      <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Wujudkan Impian Pembangunan Komunitas</h2>
+      <p class="text-light text-lg md:text-xl mb-10 opacity-90">Setiap donasi Anda, sekecil apapun, akan membantu memberikan benih pengetahuan dan harapan bagi masyarakat pedesaan.</p>
+      <a href="pages/donasi.html" class="btn bg-white text-primary hover:bg-gray-100 text-lg px-10 py-4 !min-h-[56px] shadow-lg rounded-full font-bold uppercase tracking-wide">Berdonasi Sekarang</a>
+    </div>
+  </section> -->
+
+  <!-- Latest Blog -->
+  <section class="py-24 bg-gray-50">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <div class="home-carousel" data-home-carousel>
+        <header class="home-carousel__header">
+          <div class="home-carousel__copy">
+            <h4 class="text-primary font-bold tracking-wider uppercase text-sm mb-2">Dari Blog Kami</h4>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Cerita Lapangan & Berita</h2>
+          </div>
+          <div class="home-carousel__actions">
+            <div class="home-carousel__controls" aria-label="Navigasi cerita lapangan dan berita">
+              <button class="home-carousel__nav" type="button" data-carousel-prev aria-label="Cerita sebelumnya" disabled>‹</button>
+              <button class="home-carousel__nav" type="button" data-carousel-next aria-label="Cerita berikutnya">›</button>
+            </div>
+            <a href="pages/blog.html" class="btn btn-outline hidden md:inline-flex">Lihat Semua Blog</a>
+          </div>
+        </header>
+
+        <!-- Blog cards are rendered from the shared JavaScript post data. -->
+        <div class="home-carousel__viewport" data-home-carousel-viewport role="region" aria-label="Cerita lapangan dan berita" tabindex="0">
+          <div class="home-carousel__track" data-home-carousel-track data-blog-list="latest"></div>
+        </div>
+      </div>
+
+      <div class="mt-10 text-center md:hidden">
+        <a href="pages/blog.html" class="btn btn-outline w-full p-3 font-semibold">Lihat Semua Blog</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Publications -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <div class="home-carousel" data-home-carousel>
+        <header class="home-carousel__header">
+          <div class="home-carousel__copy">
+            <h4 class="text-primary font-bold tracking-wider uppercase text-sm mb-2">Bacaan Pilihan</h4>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Publikasi &amp; Newsletter</h2>
+            <p class="text-gray-600 mt-3">Baca kabar dan pembelajaran terbaru dari komunitas MPM.</p>
+          </div>
+          <div class="home-carousel__actions">
+            <div class="home-carousel__controls" aria-label="Navigasi publikasi dan newsletter">
+              <button class="home-carousel__nav" type="button" data-carousel-prev aria-label="Publikasi sebelumnya" disabled>‹</button>
+              <button class="home-carousel__nav" type="button" data-carousel-next aria-label="Publikasi berikutnya">›</button>
+            </div>
+            <a href="pages/publikasi.html" class="btn btn-outline shrink-0">Lihat Semua Publikasi</a>
+          </div>
+        </header>
+        <div class="home-carousel__viewport" data-home-carousel-viewport role="region" aria-label="Publikasi dan newsletter" tabindex="0">
+          <div class="home-carousel__track" data-home-carousel-track data-newsletter-preview></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (4 Columns as specified) -->
+  <div id="site-footer"></div>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+  </button>
+
+  <!-- Script -->
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/field-stories.js"></script>
+  <script src="assets/js/blog-data.js"></script>
+  <script src="assets/js/publications.js"></script>
+  <script src="assets/js/home-carousels.js"></script>
+</body>
+</html>

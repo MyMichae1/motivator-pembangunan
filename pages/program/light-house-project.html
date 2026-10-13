@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light House Project (LHP) - Yayasan MPM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#1B6B2F', dark: '#145224', light: '#E8F5E9' },
+          fontFamily: { sans: ['Poppins', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+  <div id="site-header"></div>
+  <div class="bg-gray-100 py-4 border-b border-gray-200">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <nav class="flex text-sm text-gray-500" aria-label="Breadcrumb">
+        <a href="../../index.html" class="hover:text-primary transition-colors">Beranda</a>
+        <span class="mx-2">/</span>
+        <a href="../program.html" class="hover:text-primary transition-colors">Program</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-900 font-medium">Light House Project</span>
+      </nav>
+    </div>
+  </div>
+  <main class="flex-grow">
+    <section class="program-detail-hero text-white" style="--program-background-image: url('https://penamasmotivator.org/wp-content/uploads/2026/04/IMG_20260423_0956511-768x1024.jpg.webp')">
+      <div class="container mx-auto px-4 lg:px-8 max-w-7xl py-14 md:py-20">
+        <span class="text-sm font-semibold uppercase tracking-wider text-green-200">Lingkungan Hidup & Iklim</span>
+        <h1 class="text-4xl md:text-5xl font-bold mt-3 mb-5">Light House Project (LHP)</h1>
+        <p class="text-lg md:text-xl text-gray-200 max-w-3xl leading-relaxed">Kami memahami LHP sebagai proyek terdahulu yang berkaitan dengan pendampingan petani kecil dan penguatan ketahanan pertanian dataran tinggi terhadap perubahan iklim.</p>
+      </div>
+    </section>
+    <article class="container mx-auto px-4 lg:px-8 max-w-5xl py-12 md:py-16">
+      <img src="https://penamasmotivator.org/wp-content/uploads/2026/04/IMG_20260423_0956511-768x1024.jpg.webp" alt="Petani peneliti belajar menghadapi perubahan iklim di lapangan" class="w-full max-h-[520px] object-cover rounded-2xl shadow-md mb-12">
+      <div class="prose prose-lg max-w-none text-gray-600 space-y-6">
+        <h2 class="text-3xl font-bold text-primary">Pendampingan petani dalam menghadapi perubahan iklim</h2>
+        <p>Light House Project (LHP) tercatat dalam publikasi penelitian mengenai petani dataran tinggi di Toraja sebagai proyek terdahulu yang berkaitan dengan pendampingan dan peningkatan ketahanan petani terhadap perubahan iklim. Berdasarkan konteks yang tersedia, kami merangkum fokus pendampingan berikut sebagai gambaran umum, bukan sebagai daftar kegiatan resmi yang telah diverifikasi satu per satu.</p>
+
+        <h2 class="text-3xl font-bold text-primary">Fokus yang tercermin dalam konteks penelitian</h2>
+        <div class="grid md:grid-cols-2 gap-5 not-prose">
+          <section class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
+            <h3 class="text-xl font-bold text-primary mb-3">Pendampingan petani kecil</h3>
+            <p class="text-gray-600 leading-relaxed">Pendampingan membantu masyarakat pedesaan menghadapi tantangan dalam kegiatan pertanian.</p>
+          </section>
+          <section class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
+            <h3 class="text-xl font-bold text-primary mb-3">Ketahanan terhadap perubahan iklim</h3>
+            <p class="text-gray-600 leading-relaxed">Petani didorong memahami risiko perubahan cuaca dan dampaknya terhadap produktivitas.</p>
+          </section>
+          <section class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
+            <h3 class="text-xl font-bold text-primary mb-3">Praktik pertanian sesuai konteks lokal</h3>
+            <p class="text-gray-600 leading-relaxed">Pengembangan praktik pertanian mempertimbangkan kondisi lokal dan tantangan yang dihadapi petani.</p>
+          </section>
+          <section class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
+            <h3 class="text-xl font-bold text-primary mb-3">Penguatan kelompok tani</h3>
+            <p class="text-gray-600 leading-relaxed">Kerja sama antarkelompok tani dapat membantu masyarakat menangani persoalan produksi dan pemasaran hasil pertanian.</p>
+          </section>
+        </div>
+
+        <h2 class="text-3xl font-bold text-primary">Kontribusi</h2>
+        <p>Rangkuman ini menempatkan kontribusi LHP pada dukungan terhadap ketahanan masyarakat pertanian dataran tinggi melalui pendampingan dan pengembangan kapasitas petani.</p>
+        <aside class="not-prose rounded-xl border border-amber-200 bg-amber-50 p-5 text-amber-950">
+          <h3 class="font-bold mb-2">Catatan tentang informasi yang tersedia</h3>
+          <p class="leading-relaxed">Informasi publik yang kami temukan mengenai LHP masih terbatas. Rincian di halaman ini merupakan rangkuman berdasarkan konteks penelitian yang tersedia, bukan daftar kegiatan resmi LHP yang telah terverifikasi satu per satu. Untuk memastikan periode, lokasi, mitra, kegiatan, dan hasil program, diperlukan dokumentasi internal atau laporan tahunan MPM.</p>
+        </aside>
+      </div>
+      <div class="mt-12 flex flex-wrap gap-4">
+        <a href="../program.html" class="btn btn-outline">Kembali ke semua program</a>
+        <a href="../kegiatan/sekolah-lapangan.html" class="btn btn-primary">Lihat Sekolah Lapangan Iklim</a>
+      </div>
+    </article>
+  </main>
+  <div id="site-footer"></div>
+  <button id="scrollTopBtn" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+  </button>
+  <script src="../../assets/js/header.js"></script>
+  <script src="../../assets/js/footer.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

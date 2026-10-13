@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fasilitas & Pemesanan Kamar | MPM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#1B6B2F', dark: '#145224', light: '#E8F5E9' },
+          fontFamily: { sans: ['Poppins', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+  <div id="site-header"></div>
+
+  <!-- Breadcrumb -->
+  <div class="bg-gray-100 py-4 border-b border-gray-200">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <nav class="flex text-sm text-gray-500">
+        <a href="../index.html" class="hover:text-primary transition-colors">Beranda</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-900 font-medium">Fasilitas</span>
+      </nav>
+    </div>
+  </div>
+
+  <main class="flex-grow py-12">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h1 class="text-3xl font-bold text-gray-900 mb-4 border-b-4 border-primary inline-block pb-2">Fasilitas & Pemesanan Kamar</h1>
+        <p class="text-gray-600 text-lg">Temukan kamar dan paket meeting yang sesuai untuk kegiatan, pelatihan, atau kunjungan Anda.</p>
+      </div>
+
+      <section aria-labelledby="meeting-packages-title" class="mb-20">
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <h2 id="meeting-packages-title" class="text-3xl font-bold text-gray-900 mb-3">Paket Meeting</h2>
+          <p class="text-gray-600">Pilihan paket kegiatan dengan suasana pedesaan yang sejuk di Kondoran, Sangalla’.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+          <a class="meeting-package-card bg-white rounded-2xl shadow-lg border border-gray-100 p-7 flex flex-col" href="https://wa.me/6281343604500?text=Halo%20Admin%20MPM%2C%20saya%20tertarik%20dengan%20Meeting%20Package%20Rp115.000%2Forang.%20Mohon%20informasi%20lebih%20lanjut." target="_blank" rel="noopener noreferrer" aria-label="Hubungi admin melalui WhatsApp untuk Meeting Package Rp115.000 per orang">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Meeting Package</h3>
+            <p class="text-gray-600 text-sm mb-5">Penggunaan venue selama 8 jam.</p>
+            <p class="text-primary font-bold text-3xl mb-1">Rp115.000</p>
+            <p class="text-gray-500 text-sm mb-6">per orang</p>
+            <h4 class="font-semibold text-gray-900 mb-3">Termasuk</h4>
+            <ul class="space-y-2 text-sm text-gray-600 mb-6">
+              <li>1 kali makan siang atau makan malam</li>
+              <li>2 kali coffee break</li>
+              <li>Sound system standar dan panggung</li>
+              <li>LCD/Smart TV layar lebar dan screen projector</li>
+              <li>Meja, kursi, meja registrasi, flipchart, dan whiteboard</li>
+            </ul>
+            <div class="mt-auto border-t border-gray-100 pt-5">
+              <h4 class="font-semibold text-gray-900 mb-2">Contoh sajian</h4>
+              <p class="text-sm text-gray-600">Makan siang/malam dengan ayam kampung bumbu begana, tempe, puyung hae, sayur asam, lalapan, sambal, dan kerupuk. Coffee break menyajikan kopi organik asli Toraja, teh, dan kudapan seperti pisang goreng atau singkong goreng. Buah dapat berupa pisang.</p>
+            </div>
+            <span class="meeting-package-cta">Hubungi admin via WhatsApp <span aria-hidden="true">↗</span></span>
+          </a>
+
+          <a class="meeting-package-card bg-white rounded-2xl shadow-lg border-2 border-primary p-7 flex flex-col" href="https://wa.me/6281343604500?text=Halo%20Admin%20MPM%2C%20saya%20tertarik%20dengan%20Paket%20Fullboard%20Rp210.000%2Forang.%20Mohon%20informasi%20lebih%20lanjut." target="_blank" rel="noopener noreferrer" aria-label="Hubungi admin melalui WhatsApp untuk Paket Fullboard Rp210.000 per orang">
+            <span class="self-start bg-light text-primary text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full mb-4">Fullboard</span>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Paket Fullboard</h3>
+            <p class="text-gray-600 text-sm mb-5">Penggunaan venue tidak dibatasi.</p>
+            <p class="text-primary font-bold text-3xl mb-1">Rp210.000</p>
+            <p class="text-gray-500 text-sm mb-6">per orang</p>
+            <h4 class="font-semibold text-gray-900 mb-3">Termasuk</h4>
+            <ul class="space-y-2 text-sm text-gray-600 mb-6">
+              <li>Kamar tidur</li>
+              <li>3 kali makan: sarapan, makan siang, dan makan malam</li>
+              <li>2 kali coffee break</li>
+              <li>Sound system standar dan panggung</li>
+              <li>LCD/Smart TV layar lebar dan screen projector</li>
+              <li>Meja, kursi, meja registrasi, flipchart, dan whiteboard</li>
+            </ul>
+            <div class="mt-auto border-t border-gray-100 pt-5">
+              <h4 class="font-semibold text-gray-900 mb-2">Menu dapat dikonsultasikan</h4>
+              <p class="text-sm text-gray-600">Contoh menu mencakup sarapan telur dan nasi, makan siang ayam kampung atau ikan, serta makan malam gulai daging kerbau dan ikan pamarrasan. Sajian dapat dilengkapi sayur, lauk pendamping, dan buah. Untuk penggunaan lebih dari satu hari, variasi menu dapat dikonsultasikan.</p>
+            </div>
+            <span class="meeting-package-cta">Hubungi admin via WhatsApp <span aria-hidden="true">↗</span></span>
+          </a>
+
+          <a class="meeting-package-card bg-white rounded-2xl shadow-lg border border-gray-100 p-7 flex flex-col" href="https://wa.me/6281343604500?text=Halo%20Admin%20MPM%2C%20saya%20tertarik%20dengan%20paket%20Room%20%26%20Venue%20Only%20Rp75.000%2Forang%2Fhari.%20Mohon%20informasi%20lebih%20lanjut." target="_blank" rel="noopener noreferrer" aria-label="Hubungi admin melalui WhatsApp untuk paket Room and Venue Only Rp75.000 per orang per hari">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Room & Venue Only</h3>
+            <p class="text-gray-600 text-sm mb-5">Untuk peserta yang mengatur konsumsi secara mandiri.</p>
+            <p class="text-primary font-bold text-3xl mb-1">Rp75.000</p>
+            <p class="text-gray-500 text-sm mb-6">per orang per hari</p>
+            <h4 class="font-semibold text-gray-900 mb-3">Termasuk</h4>
+            <ul class="space-y-2 text-sm text-gray-600 mb-6">
+              <li>Kamar tidur</li>
+              <li>Peralatan dapur</li>
+              <li>Sound system standar dan panggung</li>
+              <li>LCD/Smart TV layar lebar dan screen projector</li>
+              <li>Meja, kursi, meja registrasi, flipchart, dan whiteboard</li>
+            </ul>
+            <p class="text-sm text-gray-600 border-t border-gray-100 pt-5">Konsumsi tidak termasuk dalam paket ini.</p>
+            <span class="meeting-package-cta mt-auto">Hubungi admin via WhatsApp <span aria-hidden="true">↗</span></span>
+          </a>
+        </div>
+
+        <p class="mt-8 text-center text-sm text-gray-600 bg-light rounded-xl p-4">
+          MPM mendukung gaya hidup ramah iklim. Mohon tidak membawa air kemasan; air minum yang dimasak dan gelas disediakan.
+        </p>
+      </section>
+
+      <section aria-labelledby="training-packages-title" class="training-packages-section mb-20">
+        <div class="training-section-heading">
+          <div class="training-section-copy">
+            <h2 id="training-packages-title" class="text-3xl font-bold text-gray-900 mb-3">Paket Pelatihan Pertanian</h2>
+            <p class="text-gray-600">Pelajari pertanian organik dan praktik budidaya berkelanjutan bersama MPM melalui pelatihan berbasis teori dan praktik lapangan.</p>
+          </div>
+          <div class="training-carousel-controls" aria-label="Navigasi paket pelatihan">
+            <button id="training-packages-prev" class="training-carousel-button" type="button" aria-label="Paket sebelumnya" aria-controls="training-package-carousel" disabled>‹</button>
+            <button id="training-packages-next" class="training-carousel-button" type="button" aria-label="Paket berikutnya" aria-controls="training-package-carousel">›</button>
+          </div>
+        </div>
+        <div id="training-package-carousel" class="training-carousel" aria-label="Daftar paket pelatihan pertanian">
+          <div id="training-package-track" class="training-carousel-track"></div>
+        </div>
+      </section>
+      
+      <div id="room-container" class="space-y-16">
+        <!-- Rooms injected here -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Booking Modal -->
+  <div id="bookingModal" class="fixed inset-0 bg-black/50 z-50 hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl shadow-xl w-full max-w-lg overflow-hidden transform scale-95 transition-transform duration-300" id="bookingContent">
+      <div class="p-4 border-b border-gray-100 flex justify-between items-center bg-gray-50">
+        <h2 class="text-xl font-bold text-gray-900">Pesan Kamar</h2>
+        <button id="closeBookingBtn" class="text-gray-500 hover:text-red-500" aria-label="Tutup">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+        </button>
+      </div>
+      <div class="p-6 overflow-y-auto max-h-[70vh]">
+        <div class="mb-4 text-sm bg-light text-primary px-4 py-3 rounded-lg font-medium" id="bookingRoomNameDisplay">
+          Kamar: -
+        </div>
+        <form id="bookingForm" class="space-y-4">
+          <input type="hidden" id="bookingRoomName">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap <span class="text-red-500">*</span></label>
+            <input type="text" id="bookingName" required class="w-full border border-gray-300 rounded px-3 py-2 focus:border-primary focus:ring-1 focus:ring-primary outline-none">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Nomor WhatsApp <span class="text-red-500">*</span></label>
+            <input type="tel" id="bookingWa" required class="w-full border border-gray-300 rounded px-3 py-2 focus:border-primary focus:ring-1 focus:ring-primary outline-none">
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">Check-in <span class="text-red-500">*</span></label>
+              <input type="date" id="bookingCheckin" required class="w-full border border-gray-300 rounded px-3 py-2 focus:border-primary focus:ring-1 focus:ring-primary outline-none">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">Check-out <span class="text-red-500">*</span></label>
+              <input type="date" id="bookingCheckout" required class="w-full border border-gray-300 rounded px-3 py-2 focus:border-primary focus:ring-1 focus:ring-primary outline-none">
+            </div>
+          </div>
+          <div id="dateError" class="text-red-500 text-sm hidden">Check-out harus setelah Check-in.</div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Jumlah Tamu <span class="text-red-500">*</span></label>
+            <input type="number" id="bookingGuests" min="1" required class="w-full border border-gray-300 rounded px-3 py-2 focus:border-primary focus:ring-1 focus:ring-primary outline-none">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Catatan</label>
+            <textarea id="bookingNotes" rows="2" class="w-full border border-gray-300 rounded px-3 py-2 focus:border-primary focus:ring-1 focus:ring-primary outline-none"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="p-4 border-t border-gray-100 bg-gray-50">
+        <button id="submitBookingBtn" class="w-full btn bg-[#25D366] hover:bg-[#128C7E] text-white flex justify-center items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Lanjutkan via WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="site-footer"></div>
+  <script src="../assets/js/header.js"></script>
+  <script src="../assets/js/footer.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/fasilitas.js"></script>
+</body>
+</html>

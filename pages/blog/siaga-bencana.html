@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bukan Superhero Tapi Tetap Siaga Bencana - Yayasan MPM</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1B6B2F',
+            dark: '#145224',
+            light: '#E8F5E9',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+
+  <div id="site-header"></div>
+
+  <!-- Breadcrumb -->
+  <div class="bg-gray-100 py-4 border-b border-gray-200">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <nav class="flex text-sm text-gray-500">
+        <a href="../../index.html" class="hover:text-primary transition-colors">Beranda</a>
+        <span class="mx-2">/</span>
+        <a href="../blog.html" class="hover:text-primary transition-colors">Blog</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-900 font-medium line-clamp-1">Bukan Superhero Tapi Tetap Siaga Bencana</span>
+      </nav>
+    </div>
+  </div>
+
+  <main class="flex-grow py-12">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <div class="space-y-12">
+        
+        <!-- Main Content -->
+        <article class="w-full bg-white p-6 md:p-10 rounded-2xl shadow-sm border border-gray-100">
+          <div class="prose prose-lg max-w-none text-gray-600 space-y-6 blog-article-content">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 leading-tight">Bukan Superhero Tapi Tetap Siaga Bencana</h1>
+            <p class="text-sm text-gray-500 -mt-6 mb-8">27 Feb 2026</p>
+            <img data-blog-image="siaga-bencana" src="https://images.unsplash.com/photo-1599839619722-39751411ea63?auto=format&fit=crop&q=80&w=800" alt="Bukan Superhero Tapi Tetap Siaga Bencana" class="w-full h-auto rounded-xl mb-8 object-cover max-h-[500px]">
+            <h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Perkuat Kesiapsiagaan Bencana Desa Dampingan MPM di Toraja Utara dan Tana Toraja</h3>
+            <p><b>Toraja,—</b> Yayasan Motivator Pembangunan Masyarakat (MPM) melaksanakan pelatihan Kesiapsiagaan Bencana Berbasis Masyarakat yang dilakukan di hotel Puri Arta Pantan Makale untuk empat (4) desa dampingan di Kabupaten Tana Toraja (28 & 30 Juni 2025), dan tujuh (7) desa di Kabupaten Toraja Utara digelar di hotel Haritage Kecamatan Kesu’ Toraja Utara (16-17 Juli 2025). Kegiatan ini menjadi langkah strategis untuk memperkuat kapasitas masyarakat terutama di desa dampingan dalam menghadapi potensi bencana yang kerap terjadi di Toraja.</p>
+            <img src="https://penamasmotivator.org/wp-content/uploads/2025/08/MPM3617-300x200.jpg.webp" alt="Perkuat Kesiapsiagaan Bencana Desa Dampingan MPM di Toraja Utara dan Tana Toraja" class="blog-article-image-secondary rounded-xl mb-8 object-cover">
+            <p>Pelatihan kesiapsiagaan bencana ini sangat penting, mengingat Toraja memiliki bentang alam yang indah namun rawan bencana, terutama di musim hujan ketika curah hujan tinggi sering memicu longsor dan genangan air. Akses menuju desa-desa yang berjauhan juga kerap terhambat jika terjadi bencana longsor yang menutupi akses jalan antar desa. Dalam situasi seperti itu, masyarakat setempat harus mampu melakukan langkah-langkah pertolongan pertama dan evakuasi sebelum bantuan dari luar tiba.</p>
+            <p>Pelatihan ini difasilitasi oleh MPM yang bekerja sama dengan BPBD,Dinas Sosial, BASARNAS & PMI sebagai wujud sinergitas antar MPM dengan Pemerintah Daerah dalam mewujudkan Desa yang tangguh bencana. Pelatihan dilakukan secara bertahap, diawali dengan sesi kelas, kemudian praktek lapangan, dan ditutup dengan simulasi bencana yang menguji kemampuan tim.</p>
+            <p>MPM berkomitmen untuk terus mendampingi desa-desa binaan agar latihan kesiapsiagaan dilakukan secara rutin. Lembaga ini juga mengajak pemerintah daerah dan komunitas lokal untuk mendukung keberlanjutan program, termasuk memperluas pelatihan ke desa-desa lain di Toraja. Sehingga, Dengan sinergi lintas pihak, Toraja dapat menjadi contoh <b>Kesiapsiagaan Bencana Berbasis Masyarakat</b> yang tangguh dan berkelanjutan.</p>
+            <blockquote class="border-l-4 border-primary pl-4 italic text-gray-700 bg-light p-4 rounded-r-lg">
+              "Kegiatan ini memberikan dampak yang sangat positif bagi perkembangan masyarakat sekitar dan membangun kesadaran akan pentingnya kolaborasi."
+            </blockquote>
+            </div>
+        </article>
+        <section class="blog-engagement" data-blog-engagement="siaga-bencana"></section>
+
+        <section aria-labelledby="recent-posts-title" class="space-y-8">
+          <h2 id="recent-posts-title" class="text-3xl font-bold text-gray-900">Artikel Terbaru</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-blog-recent="siaga-bencana"></div>
+        </section>
+        
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+  </button>
+
+  <script src="../../assets/js/header.js"></script>
+  <script src="../../assets/js/footer.js"></script>
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/blog-data.js"></script>
+</body>
+</html>

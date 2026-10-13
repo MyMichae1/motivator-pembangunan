@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Belajar bukan selalu di kelas. Mahasiswa dan petani peneliti bertemu, berbagi pengetahuan, dan menanam masa depan bersama.">
+  <title>Belajar bukan selalu di kelas, mahasiswa dan petani peneliti bertemu, berbagi ilmu, dan menanam masa depan bersama - Yayasan MPM</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1B6B2F',
+            dark: '#145224',
+            light: '#E8F5E9',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+
+  <div id="site-header"></div>
+
+  <div class="bg-gray-100 py-4 border-b border-gray-200">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <nav class="flex text-sm text-gray-500" aria-label="Breadcrumb">
+        <a href="../../index.html" class="hover:text-primary transition-colors">Beranda</a>
+        <span class="mx-2">/</span>
+        <a href="../blog.html" class="hover:text-primary transition-colors">Blog</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-900 font-medium line-clamp-1">Belajar bukan selalu di kelas, mahasiswa dan petani peneliti bertemu, berbagi ilmu, dan menanam masa depan bersama</span>
+      </nav>
+    </div>
+  </div>
+
+  <main class="flex-grow py-12">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <div class="space-y-12">
+        <article class="w-full bg-white p-6 md:p-10 rounded-2xl shadow-sm border border-gray-100">
+          <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 leading-tight">Belajar bukan selalu di kelas, mahasiswa dan petani peneliti bertemu, berbagi ilmu, dan menanam masa depan bersama</h1>
+          <img data-blog-image="belajar-bersama-petani-peneliti" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1200" alt="Lahan pertanian sebagai ruang belajar bersama" class="w-full h-auto rounded-xl mb-8 object-cover max-h-[500px]">
+          <div class="prose prose-lg max-w-none text-gray-600 space-y-6 blog-article-content">
+            <p>Kegiatan magang mahasiswa Universitas Hasanuddin Makassar di Yayasan Motivator Pembangunan Masyarakat (MPM) menjadi ruang belajar yang nyata dan bermakna. Mahasiswa terjun langsung ke sawah, mengikuti proses penanaman padi bersama para petani peneliti di Demplot Sekolah Lapang Iklim (SLI) Padi Lembang Ullin yang mejadi salah satu desa dampingan dari MPM. Mereka tidak hanya hadir sebagai peserta magang, tetapi juga sebagai pembelajar yang aktif, menyatu dengan aktivitas pertanian yang menjadi sumber kehidupan masyarakat di Lembang Ullin.</p>
+            <img src="https://penamasmotivator.org/wp-content/uploads/2026/04/MPM35901-rotated-e1777009152516.jpg" alt="Mahasiswa dan petani peneliti belajar bersama di lahan pertanian" class="w-full h-auto rounded-xl mb-8 object-cover max-h-[500px]">
+            <p>Dalam proses ini, mahasiswa belajar langsung dari petani peneliti yang telah memiliki pengalaman dan pengetahuan lapangan yang mendalam. Para petani tidak hanya mengajarkan teknik menanam, tetapi juga berbagi pemahaman tentang kondisi tanah, pola musim, serta strategi menghadapi perubahan iklim. Interaksi ini menciptakan pertukaran pengetahuan antara dunia akademik dan pengalaman praktis, sehingga mahasiswa mendapatkan perspektif yang lebih utuh tentang pertanian berkelanjutan.</p>
+            <p>Melalui kegiatan ini, mahasiswa tidak hanya meningkatkan keterampilan teknis, tetapi juga membangun kepekaan sosial dan rasa tanggung jawab terhadap pembangunan masyarakat. Pengalaman belajar dari petani peneliti menjadi bekal berharga untuk menghadapi tantangan di masa depan, sekaligus memperkuat peran generasi muda dalam mendukung ketahanan pangan dan pembangunan yang berkelanjutan.</p>
+          </div>
+        </article>
+
+        <section class="blog-engagement" data-blog-engagement="belajar-bersama-petani-peneliti"></section>
+
+        <section aria-labelledby="recent-posts-title" class="space-y-8">
+          <h2 id="recent-posts-title" class="text-3xl font-bold text-gray-900">Artikel Terbaru</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-blog-recent="belajar-bersama-petani-peneliti"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <button id="scrollTopBtn" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+  </button>
+
+  <script src="../../assets/js/header.js"></script>
+  <script src="../../assets/js/footer.js"></script>
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/blog-data.js"></script>
+</body>
+</html>

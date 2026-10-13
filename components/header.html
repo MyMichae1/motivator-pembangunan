@@ -1,0 +1,137 @@
+<header class="site-header w-full bg-white transition-all duration-300 border-b border-gray-100 flex flex-col">
+  <div class="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl w-full">
+    <div class="w-full flex justify-between items-center min-h-[80px]">
+    <a href="index.html" class="flex-shrink-0 flex items-center">
+      <img data-site-logo src="/assets/images/logo mpm.webp" alt="Logo MPM" class="site-logo w-auto object-contain">
+    </a>
+
+    <button id="mobileMenuBtn" class="lg:hidden text-gray-700 hover:text-primary focus:outline-none ml-auto p-2" aria-label="Buka menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+
+    <nav class="hidden lg:flex items-center space-x-3 xl:space-x-5" aria-label="Navigasi utama">
+      <a href="index.html" class="text-sm xl:text-base text-gray-600 hover:text-primary font-medium transition-colors">Beranda</a>
+      <div class="relative group">
+        <a href="pages/program.html" class="text-sm xl:text-base text-gray-600 hover:text-primary font-medium transition-colors flex items-center gap-1">
+          Program
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+        </a>
+        <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100">
+          <a href="pages/program.html#peace-building" class="block px-4 py-2 text-sm text-gray-700 hover:bg-light hover:text-primary">Peace Building</a>
+          <a href="pages/program.html#lhp" class="block px-4 py-2 text-sm text-gray-700 hover:bg-light hover:text-primary">Light House Project</a>
+          <a href="pages/program.html#rycam" class="block px-4 py-2 text-sm text-gray-700 hover:bg-light hover:text-primary">RYCAM</a>
+          <a href="pages/program/ems.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-light hover:text-primary">EMS</a>
+        </div>
+      </div>
+      <a href="pages/kegiatan.html" class="text-sm xl:text-base text-gray-600 hover:text-primary font-medium transition-colors">Kegiatan</a>
+      <a href="pages/publikasi.html" class="text-sm xl:text-base text-gray-600 hover:text-primary font-medium transition-colors">Publikasi</a>
+      <a href="pages/blog.html" class="text-sm xl:text-base text-gray-600 hover:text-primary font-medium transition-colors">Blog</a>
+      <a href="pages/produk.html" class="text-sm xl:text-base text-gray-600 hover:text-primary font-medium transition-colors">Produk</a>
+      <a href="pages/fasilitas.html" class="text-sm xl:text-base text-gray-600 hover:text-primary font-medium transition-colors">Fasilitas</a>
+      <a href="pages/kontak.html" class="text-sm xl:text-base text-gray-600 hover:text-primary font-medium transition-colors">Kontak</a>
+      <a href="pages/tentang.html" class="text-sm xl:text-base text-gray-600 hover:text-primary font-medium transition-colors">Tentang</a>
+    </nav>
+
+    <div class="hidden lg:flex items-center space-x-4">
+      <!-- <a href="pages/donasi.html" class="btn btn-primary">Donasi</a> -->
+      <details class="language-switcher">
+        <summary class="language-toggle" aria-label="Pilih bahasa">
+          <svg data-active-language-flag xmlns="http://www.w3.org/2000/svg" class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="10" fill="#e31b23"/><rect y="10" width="30" height="10" fill="#fff"/></svg>
+          <span data-active-language-name>Indonesia</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 language-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9 6 6 6-6"/></svg>
+        </summary>
+        <div class="language-dropdown" role="group" aria-label="Pilih bahasa">
+          <button type="button" data-translate-language="id" class="language-option" aria-label="Pilih Indonesia">
+            <svg xmlns="http://www.w3.org/2000/svg" class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="10" fill="#e31b23"/><rect y="10" width="30" height="10" fill="#fff"/></svg>
+            <span><strong>Indonesia</strong></span>
+          </button>
+          <button type="button" data-translate-language="en" class="language-option" aria-label="Translate ke English">
+            <svg xmlns="http://www.w3.org/2000/svg" class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><path fill="#b22234" d="M0 0h30v2H0zm0 4h30v2H0zm0 4h30v2H0zm0 4h30v2H0zm0 4h30v2H0zm0 4h30v2H0z"/><path fill="#3c3b6e" d="M0 0h13v11H0z"/><g fill="#fff"><circle cx="2" cy="2" r=".6"/><circle cx="6" cy="2" r=".6"/><circle cx="10" cy="2" r=".6"/><circle cx="4" cy="5" r=".6"/><circle cx="8" cy="5" r=".6"/><circle cx="2" cy="8" r=".6"/><circle cx="6" cy="8" r=".6"/><circle cx="10" cy="8" r=".6"/></g></svg>
+            <span><strong>English</strong></span>
+          </button>
+          <button type="button" data-translate-language="de" class="language-option" aria-label="Translate ke Deutsch">
+            <svg xmlns="http://www.w3.org/2000/svg" class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="7" fill="#000"/><rect y="7" width="30" height="6" fill="#dd0000"/><rect y="13" width="30" height="7" fill="#ffce00"/></svg>
+            <span><strong>Deutsch</strong></span>
+          </button>
+        </div>
+      </details>
+      <button class="search-toggle text-gray-600 hover:text-primary p-2" aria-label="Buka pencarian" aria-expanded="false" aria-controls="searchPanel">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white shadow-md border-t border-gray-100 lg:hidden">
+    <nav class="flex flex-col py-4" aria-label="Navigasi seluler">
+      <a href="index.html" class="px-6 py-3 border-b border-gray-50 text-gray-700 hover:text-primary">Beranda</a>
+      <div class="px-6 py-2 border-b border-gray-50 flex justify-between items-center">
+        <a href="pages/program.html" class="text-gray-700 hover:text-primary flex-grow py-1">Program</a>
+        <button id="programDropdownToggle" class="p-2 text-gray-500 hover:text-primary focus:outline-none" aria-label="Toggle Submenu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+        </button>
+      </div>
+      <div id="programDropdownMenu" class="hidden bg-gray-50 flex-col">
+        <a href="pages/program.html#peace-building" class="px-10 py-2 text-sm text-gray-600 block">Peace Building</a>
+        <a href="pages/program.html#lhp" class="px-10 py-2 text-sm text-gray-600 block">Light House Project</a>
+        <a href="pages/program.html#rycam" class="px-10 py-2 text-sm text-gray-600 block">RYCAM</a>
+        <a href="pages/program/ems.html" class="px-10 py-2 text-sm text-gray-600 block">EMS</a>
+      </div>
+      <a href="pages/kegiatan.html" class="px-6 py-3 border-b border-gray-50 text-gray-700 hover:text-primary">Kegiatan</a>
+      <a href="pages/publikasi.html" class="px-6 py-3 border-b border-gray-50 text-gray-700 hover:text-primary">Publikasi</a>
+      <a href="pages/blog.html" class="px-6 py-3 border-b border-gray-50 text-gray-700 hover:text-primary">Blog</a>
+      <a href="pages/produk.html" class="px-6 py-3 border-b border-gray-50 text-gray-700 hover:text-primary">Produk</a>
+      <a href="pages/fasilitas.html" class="px-6 py-3 border-b border-gray-50 text-gray-700 hover:text-primary">Fasilitas</a>
+      <a href="pages/kontak.html" class="px-6 py-3 border-b border-gray-50 text-gray-700 hover:text-primary">Kontak</a>
+      <a href="pages/tentang.html" class="px-6 py-3 border-b border-gray-50 text-gray-700 hover:text-primary">Tentang</a>
+      <div class="px-6 py-4 flex flex-col gap-4">
+        <a href="pages/donasi.html" class="btn btn-primary w-full text-center">Donasi</a>
+        <details class="language-switcher language-switcher-mobile">
+          <summary class="language-toggle language-toggle-mobile" aria-label="Pilih bahasa">
+            <span class="flex items-center gap-2">
+              <svg data-active-language-flag xmlns="http://www.w3.org/2000/svg" class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="10" fill="#e31b23"/><rect y="10" width="30" height="10" fill="#fff"/></svg>
+              <span data-active-language-name>Indonesia</span>
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 language-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <div class="language-dropdown" role="group" aria-label="Pilih bahasa">
+            <button type="button" data-translate-language="id" class="language-option" aria-label="Pilih Indonesia">
+              <svg xmlns="http://www.w3.org/2000/svg" class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="10" fill="#e31b23"/><rect y="10" width="30" height="10" fill="#fff"/></svg>
+              <span><strong>Indonesia</strong></span>
+            </button>
+            <button type="button" data-translate-language="en" class="language-option" aria-label="Translate ke English">
+              <svg xmlns="http://www.w3.org/2000/svg" class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><path fill="#b22234" d="M0 0h30v2H0zm0 4h30v2H0zm0 4h30v2H0zm0 4h30v2H0zm0 4h30v2H0zm0 4h30v2H0z"/><path fill="#3c3b6e" d="M0 0h13v11H0z"/><g fill="#fff"><circle cx="2" cy="2" r=".6"/><circle cx="6" cy="2" r=".6"/><circle cx="10" cy="2" r=".6"/><circle cx="4" cy="5" r=".6"/><circle cx="8" cy="5" r=".6"/><circle cx="2" cy="8" r=".6"/><circle cx="6" cy="8" r=".6"/><circle cx="10" cy="8" r=".6"/></g></svg>
+              <span><strong>English</strong></span>
+            </button>
+            <button type="button" data-translate-language="de" class="language-option" aria-label="Translate ke Deutsch">
+              <svg xmlns="http://www.w3.org/2000/svg" class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="7" fill="#000"/><rect y="7" width="30" height="6" fill="#dd0000"/><rect y="13" width="30" height="7" fill="#ffce00"/></svg>
+              <span><strong>Deutsch</strong></span>
+            </button>
+          </div>
+        </details>
+        <button class="search-toggle btn btn-outline w-full flex justify-center gap-2" aria-label="Buka pencarian" aria-expanded="false" aria-controls="searchPanel">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          Pencarian
+        </button>
+      </div>
+    </nav>
+    </div>
+    <div id="searchPanel" class="hidden w-full border-t border-primary/10">
+      <div class="py-4">
+      <form data-site-search action="pages/search.html" method="GET" class="flex items-center gap-3">
+        <label for="searchInput" class="sr-only">Cari blog dan publikasi</label>
+        <div class="relative flex-1">
+          <input type="search" id="searchInput" name="q" placeholder="Cari blog dan publikasi..." class="w-full rounded-lg border border-primary/20 bg-white/80 px-4 py-3 pr-12 text-gray-800 shadow-sm backdrop-blur-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20" autocomplete="off" required>
+          <button type="submit" class="absolute right-3 top-1/2 -translate-y-1/2 text-primary/70 hover:text-primary" aria-label="Cari">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          </button>
+        </div>
+        <button id="searchClose" type="button" class="rounded-lg px-3 py-2 text-gray-700 hover:bg-white/60 hover:text-primary" aria-label="Tutup pencarian">Tutup</button>
+      </form>
+      </div>
+    </div>
+  </div>
+</header>
+<div id="google_translate_element" class="fixed -left-[10000px] top-0 w-[300px] h-10 overflow-visible" aria-hidden="true"></div>
+<p id="translateStatus" class="sr-only" role="status" aria-live="polite"></p>

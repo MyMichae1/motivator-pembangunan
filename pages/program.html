@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program Kami - Yayasan MPM</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1B6B2F',
+            dark: '#145224',
+            light: '#E8F5E9',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="antialiased text-gray-800 bg-gray-50">
+  <div id="site-header"></div>
+
+  <!-- Page Header -->
+  <section class="image-page-hero program-page-hero bg-primary text-white py-16">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Program Unggulan</h1>
+      <p class="text-lg text-light max-w-3xl mx-auto">Kami bekerja bersama masyarakat untuk membangun kehidupan yang damai, tangguh, dan lestari. Kenali pendekatan kami dalam setiap program.</p>
+    </div>
+  </section>
+
+  <!-- Programs Detail -->
+  <section class="py-20">
+    <div class="container mx-auto px-4 lg:px-8 max-w-5xl space-y-24">
+      
+      <!-- Program 1: Peace Building -->
+      <div id="peace-building" class="group">
+        <div class="flex flex-col md:flex-row gap-8 items-center bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+          <div class="w-full md:w-2/5 overflow-hidden rounded-2xl aspect-video bg-gray-200">
+             <img src="https://penamasmotivator.org/wp-content/uploads/2025/08/DSC5773_Lohnes-1024x618.jpg.webp" alt="Kegiatan program Peacebuilding bersama masyarakat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          </div>
+          <div class="w-full md:w-3/5">
+            <span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">Sosial & Perdamaian</span>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Peacebuilding</h2>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Kami bekerja bersama pemuda dan kelompok masyarakat untuk menumbuhkan hubungan yang damai, inklusif, dan saling menghargai. Green Ambassador menjadi salah satu contoh kolaborasi lintas agama melalui dialog dan aksi lingkungan.
+            </p>
+            <a href="program/peacebuilding.html" class="btn btn-outline text-sm">Kenali program Peacebuilding</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Program 2: Light House Project (LHP) -->
+      <div id="lhp" class="group">
+        <div class="flex flex-col md:flex-row-reverse gap-8 items-center bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+          <div class="w-full md:w-2/5 overflow-hidden rounded-2xl aspect-square bg-gray-200">
+             <img src="https://penamasmotivator.org/wp-content/uploads/2026/04/IMG_20260423_0956511-768x1024.jpg.webp" alt="Petani peneliti belajar menghadapi perubahan iklim di lapangan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          </div>
+          <div class="w-full md:w-3/5">
+            <span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">Lingkungan Hidup & Iklim</span>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Light House Project (LHP)</h2>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              LHP berkaitan dengan pendampingan petani kecil dan penguatan ketahanan pertanian dataran tinggi terhadap perubahan iklim. Informasi publik tentang rincian proyek ini masih terbatas.
+            </p>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Pendampingan petani dan pengembangan praktik pertanian sesuai kondisi lokal menjadi fokus yang dirangkum dari konteks penelitian yang tersedia.
+            </p>
+            <a href="program/light-house-project.html" class="btn btn-outline text-sm">Kenali program LHP</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Program 3: RYCAM -->
+      <div id="rycam" class="group">
+        <div class="flex flex-col md:flex-row gap-8 items-center bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+          <div class="w-full md:w-2/5 overflow-hidden rounded-2xl aspect-square bg-gray-200">
+             <img src="https://penamasmotivator.org/wp-content/uploads/2025/08/C5719T01-1024x576.jpg.webp" alt="RYCAM Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          </div>
+          <div class="w-full md:w-3/5">
+            <span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">Pemuda & Aksi Nyata</span>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">RYCAM (Rural Youth Climate Action Movement)</h2>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Kami memberdayakan generasi muda pedesaan, khususnya perempuan, untuk mendorong pertanian berkelanjutan, ketahanan pangan, dan aksi iklim.
+            </p>
+            <a href="program/rycam.html" class="btn btn-outline text-sm">Kenali program RYCAM</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Program 4: EMS -->
+      <div id="ems" class="group">
+        <div class="flex flex-col md:flex-row-reverse gap-8 items-center bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+          <div class="w-full md:w-2/5 overflow-hidden rounded-2xl aspect-square bg-gray-200">
+             <img src="https://img.inews.co.id/files/networks/2024/05/21/fad65_getor.jpg" alt="Kegiatan EMS dalam solidaritas dan pelayanan sosial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          </div>
+          <div class="w-full md:w-3/5">
+            <span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">Solidaritas & Pelayanan Sosial</span>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">EMS (Evangelical Mission in Solidarity)</h2>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              EMS adalah jaringan misi dan solidaritas gereja-gereja evangelis yang memperkuat pelayanan sosial, pendidikan, kesehatan, solidaritas, dan pemberdayaan masyarakat dalam konteks yang inklusif dan berbasis komunitas.
+            </p>
+            <a href="program/ems.html" class="btn btn-outline text-sm">Kenali program EMS</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="site-footer"></div>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+  </button>
+
+  <script src="../assets/js/header.js"></script>
+  <script src="../assets/js/footer.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

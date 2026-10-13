@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-labelledby="title desc">
+  <title id="title">Newsletter Agustus</title>
+  <desc id="desc">Ilustrasi sampul potret tentang pertanian tangguh dan kolaborasi.</desc>
+  <defs>
+    <linearGradient id="fieldsky" x2="0" y2="1"><stop stop-color="#d9edf0"/><stop offset="1" stop-color="#f2dfaa"/></linearGradient>
+  </defs>
+  <rect width="600" height="800" fill="url(#fieldsky)"/>
+  <circle cx="456" cy="184" r="67" fill="#f1c75b"/>
+  <path d="M0 400 146 284l140 131 127-126 187 143v368H0Z" fill="#86ad76"/>
+  <path d="M0 492 154 371l135 125 134-111 177 124v291H0Z" fill="#4b7a4c"/>
+  <path d="M0 560q150-84 300 0t300 0v240H0Z" fill="#b7a75e"/>
+  <g fill="none" stroke="#f0e4af" stroke-width="9">
+    <path d="M-20 602q160-78 330 0t330 0"/><path d="M-20 674q160-78 330 0t330 0"/><path d="M-20 746q160-78 330 0t330 0"/>
+  </g>
+  <g fill="#28633d">
+    <path d="M134 528q-4-117 12-154 20 40 12 154z"/><path d="M132 428q-51-4-59-43 47 4 59 43m11-9q49-18 50-56-43 11-50 56"/>
+    <path d="M425 543q-4-106 13-141 18 37 12 141z"/><path d="M427 456q-43-5-51-38 41 4 51 38m10-6q41-16 42-47-37 9-42 47"/>
+  </g>
+  <text x="48" y="92" fill="#1b6b2f" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="5">MPM • NEWSLETTER</text>
+  <text x="48" y="716" fill="#fff" font-family="Arial,sans-serif" font-size="57" font-weight="700">AGUSTUS</text>
+  <text x="52" y="756" fill="#f5f0d9" font-family="Arial,sans-serif" font-size="18" letter-spacing="3">PERTANIAN TANGGUH</text>
+</svg>

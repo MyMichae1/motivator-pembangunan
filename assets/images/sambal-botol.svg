@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Sambal Botol MPM</title>
+  <desc id="description">Ilustrasi botol sambal cabai merah.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fef3e2"/>
+      <stop offset="1" stop-color="#f4d4a7"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#651b14"/>
+      <stop offset=".3" stop-color="#9d2015"/>
+      <stop offset=".68" stop-color="#c13319"/>
+      <stop offset="1" stop-color="#641911"/>
+    </linearGradient>
+    <filter id="shadow" x="-.3" y="-.2" width="1.6" height="1.6">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12"/>
+      <feOffset dy="10"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".2"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#background)"/>
+  <circle cx="114" cy="103" r="63" fill="#fff8eb" opacity=".7"/>
+  <circle cx="676" cy="455" r="105" fill="#fff8eb" opacity=".55"/>
+  <path d="M148 399c52-49 91-34 116-4-48 17-71 36-102 82-24-20-30-53-14-78Zm502-187c-57-13-83 14-92 51 51-7 81-1 124 25 16-28 4-59-32-76Z" fill="#63813f"/>
+  <path d="M253 457c-35-38-30-79 12-104 8-48 49-78 94-67 32-37 91-41 132-8 49-13 97 17 99 69 39 32 37 86 1 114-18 50-72 73-119 53-48 27-108 13-127-28-46 1-81-7-92-29Z" fill="#cd3821"/>
+  <path d="M238 440c-6-20 4-40 27-53m327 72c15-16 20-37 10-57m-225-82c18-20 44-29 68-24m-76 207c20 14 45 17 67 10" fill="none" stroke="#f48342" stroke-width="18" stroke-linecap="round" opacity=".8"/>
+  <path d="M335 183h137v62H335z" rx="12" fill="#5b2719"/>
+  <path d="M348 133h111v67H348z" rx="10" fill="#a63c22"/>
+  <path d="M356 133h15v67h-15zm29 0h15v67h-15zm29 0h15v67h-15zm29 0h12v67h-12z" fill="#e79c5b"/>
+  <path d="M322 223c-47 19-74 62-72 124l-12 144c-3 41 24 71 64 71h188c40 0 67-30 64-71l-12-144c2-62-25-105-72-124Z" fill="url(#glass)" stroke="#642217" stroke-width="9" filter="url(#shadow)"/>
+  <path d="M283 343c0-43 19-73 52-89m-39 137-12 101c-2 15 6 24 22 24" fill="none" stroke="#f6a26c" stroke-width="12" stroke-linecap="round" opacity=".8"/>
+  <path d="M293 369h212v126H293z" rx="16" fill="#fff1d8" stroke="#e5bd83" stroke-width="5"/>
+  <path d="M314 390h170" stroke="#1b6b2f" stroke-width="8" stroke-linecap="round"/>
+  <text x="399" y="431" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#8e2718">SAMBAL</text>
+  <text x="399" y="464" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="2" fill="#1b6b2f">MPM</text>
+  <path d="M371 110c4-28 26-48 51-45 16 3 23 14 22 25-23-4-34 10-37 27" fill="#bd3020"/>
+  <path d="M414 80c-8-18-26-22-43-13 11 15 24 19 43 13Zm17-1c9-20 29-24 46-12-12 16-27 21-46 12Z" fill="#63813f"/>
+  <text x="400" y="570" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="3" fill="#5c3522">RASA LOKAL · KUALITAS MPM</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-labelledby="title desc">
+  <title id="title">Newsletter Mei</title>
+  <desc id="desc">Ilustrasi sampul potret tentang lahan pertanian dan pengetahuan lokal.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#d9f2df"/><stop offset="1" stop-color="#f6f4d6"/></linearGradient>
+    <linearGradient id="field" x2="0" y2="1"><stop stop-color="#74a95a"/><stop offset="1" stop-color="#245b35"/></linearGradient>
+  </defs>
+  <rect width="600" height="800" fill="url(#sky)"/>
+  <circle cx="448" cy="204" r="73" fill="#f4c95d"/>
+  <path d="M0 400 166 270l129 119 116-145 189 162v394H0Z" fill="#8dbb78"/>
+  <path d="M0 466 143 344l147 115 123-134 187 153v322H0Z" fill="#4f8950"/>
+  <path d="M0 516q150-86 300 0t300 0v284H0Z" fill="url(#field)"/>
+  <g fill="none" stroke="#d7e8a3" stroke-width="8" opacity=".9">
+    <path d="M-20 574q155-80 330 2t330-2"/><path d="M-20 643q155-80 330 2t330-2"/><path d="M-20 712q155-80 330 2t330-2"/>
+  </g>
+  <path d="M94 460q30-116 64 0m-19-37q-52-12-46-50 43 6 46 50m-1-15q43-10 44-47-39 2-44 47" fill="#28633d"/>
+  <text x="48" y="92" fill="#1b6b2f" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="5">MPM • NEWSLETTER</text>
+  <text x="48" y="716" fill="#fff" font-family="Arial,sans-serif" font-size="64" font-weight="700">MEI</text>
+  <text x="52" y="756" fill="#e7f4df" font-family="Arial,sans-serif" font-size="18" letter-spacing="3">BELAJAR DARI LOKAL</text>
+</svg>

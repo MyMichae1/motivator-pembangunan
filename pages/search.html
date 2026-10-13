@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cari artikel blog dan publikasi Yayasan Motivator Pembangunan Masyarakat.">
+  <title>Pencarian - Yayasan MPM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#1B6B2F', dark: '#145224', light: '#E8F5E9' },
+          fontFamily: { sans: ['Poppins', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+  <div id="site-header"></div>
+
+  <section class="bg-gray-100 py-12 border-b border-gray-200">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Hasil pencarian</h1>
+      <p class="text-gray-600">Kata kunci: <span data-search-query class="font-semibold text-primary"></span></p>
+    </div>
+  </section>
+
+  <main class="flex-grow py-12">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl space-y-14">
+      <section aria-labelledby="search-blog-title" class="space-y-6">
+        <h2 id="search-blog-title" class="text-2xl md:text-3xl font-bold text-primary">Blog &amp; Artikel</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-blog-search-results></div>
+      </section>
+
+      <section aria-labelledby="search-publications-title" class="space-y-6">
+        <h2 id="search-publications-title" class="text-2xl md:text-3xl font-bold text-primary">Publikasi &amp; Newsletter</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-publication-search-results></div>
+      </section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <button id="scrollTopBtn" aria-label="Gulir ke atas">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+  </button>
+
+  <script src="../assets/js/header.js"></script>
+  <script src="../assets/js/footer.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/blog-data.js"></script>
+  <script src="../assets/js/publications.js"></script>
+</body>
+</html>

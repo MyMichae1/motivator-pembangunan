@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-labelledby="title desc">
+  <title id="title">Newsletter Juni</title>
+  <desc id="desc">Ilustrasi sampul potret tentang hutan dan keanekaragaman hayati.</desc>
+  <defs>
+    <linearGradient id="forest" x2="0" y2="1"><stop stop-color="#c9e9d4"/><stop offset="1" stop-color="#3e7955"/></linearGradient>
+  </defs>
+  <rect width="600" height="800" fill="url(#forest)"/>
+  <circle cx="446" cy="170" r="70" fill="#f4d783" opacity=".85"/>
+  <path d="M0 543 117 250l111 293 103-373 116 373 97-270 104 270v257H0Z" fill="#367450"/>
+  <path d="M0 624 112 354l101 270 116-334 111 334 103-257 106 257v176H0Z" fill="#1b573e"/>
+  <path d="M0 692q140-66 300 0t300 0v108H0Z" fill="#b5d4a2"/>
+  <g fill="#e6f0ce">
+    <circle cx="126" cy="270" r="54"/><circle cx="228" cy="293" r="42"/><circle cx="330" cy="213" r="56"/><circle cx="447" cy="302" r="48"/><circle cx="552" cy="272" r="46"/>
+  </g>
+  <g fill="#286649">
+    <path d="M118 286h16v225h-16z"/><path d="M322 232h16v279h-16z"/><path d="M439 321h16v190h-16z"/>
+  </g>
+  <text x="48" y="92" fill="#174c36" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="5">MPM • NEWSLETTER</text>
+  <text x="48" y="716" fill="#fff" font-family="Arial,sans-serif" font-size="64" font-weight="700">JUNI</text>
+  <text x="52" y="756" fill="#e7f4df" font-family="Arial,sans-serif" font-size="18" letter-spacing="3">MERAWAT LINGKUNGAN</text>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "name": "mpm-blog",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

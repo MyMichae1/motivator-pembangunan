@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kegiatan - Yayasan MPM</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1B6B2F',
+            dark: '#145224',
+            light: '#E8F5E9',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+  <div id="site-header"></div>
+
+  <section class="image-page-hero activities-page-hero text-white py-16">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Kegiatan Kami</h1>
+      <p class="text-lg text-light max-w-3xl mx-auto">Melihat lebih dekat aksi nyata dan rekam jejak MPM di lapangan.</p>
+    </div>
+  </section>
+
+  <!-- Timeline / Agenda -->
+  <section class="upcoming-activities-section py-20 bg-white">
+    <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 border-b-4 border-primary inline-block pb-2">Agenda Kegiatan Mendatang</h2>
+      </div>
+      
+      <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-300 before:to-transparent">
+        
+        <!-- Item 1 -->
+        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+          <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded border border-gray-100 bg-white shadow hover:shadow-md transition-shadow">
+            <div class="flex items-center justify-between mb-1">
+              <a href="kegiatan/pelatihan-diversifikasi.html" class="font-bold text-gray-900 hover:text-primary transition-colors block">Pelatihan Diversifikasi Pertanian</a>
+              <time class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded">25 Nov '25</time>
+            </div>
+            <div class="text-gray-600 text-sm">Aula Desa Rantepao. Fokus pada penanaman padi hitam dan hortikultura ramah iklim.</div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+          <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded border border-gray-100 bg-white shadow hover:shadow-md transition-shadow">
+            <div class="flex items-center justify-between mb-1">
+              <a href="kegiatan/dialog-damai.html" class="font-bold text-gray-900 hover:text-primary transition-colors block">Seminar Dialog Damai Lintas Agama</a>
+              <time class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded">10 Des '25</time>
+            </div>
+            <div class="text-gray-600 text-sm">Aula Gereja Toraja Kondoran. Peserta perwakilan toko agama dan pemuda Tana Toraja.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 border-b-4 border-primary inline-block pb-2">Galeri Kegiatan</h2>
+        <p class="mt-5 mx-auto max-w-3xl text-gray-600 leading-relaxed">Dokumentasi kegiatan MPM bersama masyarakat dalam pemberdayaan, pertanian, dan pembangunan berkelanjutan.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 md:auto-rows-[8rem] lg:grid-cols-12 lg:auto-rows-[9rem] gap-4">
+        <a href="kegiatan/sekolah-lapangan.html" class="relative block overflow-hidden rounded-xl group aspect-[4/3] sm:col-span-2 sm:aspect-[3/2] md:col-span-4 md:row-span-2 md:aspect-auto lg:col-span-8">
+          <img src="https://rycam.id/wp-content/uploads/2026/06/20260204_123247-960x720.jpg" alt="Sekolah Lapangan Iklim bersama petani" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="text-white font-semibold">Sekolah Lapangan Iklim</span>
+          </div>
+        </a>
+        <a href="kegiatan/tanam-pohon-rycam.html" class="relative block overflow-hidden rounded-xl group aspect-[4/3] sm:col-span-2 sm:aspect-[3/2] md:col-span-2 md:row-span-2 md:aspect-auto lg:col-span-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp1eKBgTcM-lP6PwjZr5isd9xrU380xHrti_WXn3eorw&s=10" alt="Kegiatan tanam pohon RYCAM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="text-white font-semibold">Tanam Pohon RYCAM</span>
+          </div>
+        </a>
+        <a href="kegiatan/panen-raya.html" class="relative block overflow-hidden rounded-xl group aspect-[4/3] sm:aspect-[3/2] md:col-span-3 md:aspect-auto lg:col-span-3">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR43c1U2HgWl6O3hvAmcOGpqy4fLeTDf6JWmXBPHOzukg&s=10" alt="Panen raya padi bersama masyarakat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="text-white font-semibold">Panen Raya Padi </span>
+          </div>
+        </a>
+        <a href="kegiatan/monitoring-pertanian.html" class="relative block overflow-hidden rounded-xl group aspect-[4/3] sm:aspect-[3/2] md:col-span-3 md:aspect-auto lg:col-span-3">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1F70QUfBeQLYEhgP-p8gM5X5r9Erc2P5TkU0xdL_70ZpCYeKKb6_oLdw&s=10" alt="Monitoring pertanian bersama masyarakat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="text-white font-semibold">Monitoring Pertanian</span>
+          </div>
+        </a>
+        <figure class="relative m-0 overflow-hidden rounded-xl aspect-[4/3] sm:aspect-[3/2] md:col-span-3 md:aspect-auto group">
+          <img src="https://rycam.id/wp-content/uploads/2026/08/20260812_091307-960x720.jpg" alt="Dokumentasi kegiatan MPM, Agustus 2026" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+        </figure>
+        <figure class="relative m-0 overflow-hidden rounded-xl aspect-[4/3] sm:aspect-[3/2] md:col-span-3 md:aspect-auto group">
+          <img src="https://rycam.id/wp-content/uploads/2025/07/DSC08135-960x720.jpg" alt="Dokumentasi kegiatan MPM, Juli 2025" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+  </button>
+
+  <script src="../assets/js/header.js"></script>
+  <script src="../assets/js/footer.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

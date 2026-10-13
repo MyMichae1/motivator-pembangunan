@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panen Raya Padi Hitam - Yayasan MPM</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1B6B2F',
+            dark: '#145224',
+            light: '#E8F5E9',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+
+  <div id="site-header"></div>
+
+  <!-- Breadcrumb -->
+  <div class="bg-gray-100 py-4 border-b border-gray-200">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <nav class="flex text-sm text-gray-500">
+        <a href="../../index.html" class="hover:text-primary transition-colors">Beranda</a>
+        <span class="mx-2">/</span>
+        <a href="../kegiatan.html" class="hover:text-primary transition-colors">Kegiatan</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-900 font-medium line-clamp-1">Panen Raya Padi Hitam</span>
+      </nav>
+    </div>
+  </div>
+
+  <main class="flex-grow py-12">
+    <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+        
+        <article class="bg-white p-6 md:p-10 rounded-2xl shadow-sm border border-gray-100">
+          <div class="flex items-center gap-4 mb-6 text-sm">
+            <span class="bg-light text-primary px-3 py-1 rounded-full font-semibold">Pertanian</span>
+            <span class="text-gray-500 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+              2025
+            </span>
+          </div>
+          
+          <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 leading-tight">Panen Raya Padi Hitam</h1>
+          
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR43c1U2HgWl6O3hvAmcOGpqy4fLeTDf6JWmXBPHOzukg&s=10" alt="Panen Raya Padi Hitam" class="w-full h-auto rounded-xl mb-8 object-cover max-h-[500px]">
+          
+          <div class="prose prose-lg max-w-none text-gray-600 space-y-6">
+            <p>Detail kegiatan mengenai Panen Raya Padi Hitam. Kegiatan ini merupakan bagian penting dari program Yayasan Motivator Pembangunan Masyarakat dalam mencapai tujuannya membangun masyarakat berkelanjutan dan tangguh.</p>
+            <p>Berbagai elemen masyarakat dilibatkan dalam kegiatan ini untuk memastikan bahwa setiap program yang dijalankan dapat memberikan dampak nyata yang dapat dirasakan langsung oleh komunitas.</p>
+            <h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Tujuan Kegiatan</h3>
+            <ul class="list-disc pl-5 space-y-2">
+                <li>Meningkatkan kapasitas masyarakat dalam menghadapi perubahan iklim.</li>
+                <li>Membangun kesadaran akan pentingnya pelestarian lingkungan.</li>
+                <li>Memfasilitasi dialog dan kolaborasi antar warga dan pihak terkait.</li>
+            </ul>
+            <p>Diharapkan melalui kegiatan ini, masyarakat menjadi lebih mandiri dan mampu beradaptasi dengan berbagai tantangan yang ada, sekaligus tetap menjaga keharmonisan dalam keberagaman.</p>
+          </div>
+        </article>
+        
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+  </button>
+
+  <script src="../../assets/js/header.js"></script>
+  <script src="../../assets/js/footer.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

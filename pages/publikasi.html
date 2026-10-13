@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publikasi & Newsletter - Yayasan MPM</title>
+  <meta name="description" content="Baca newsletter dan publikasi Yayasan Motivator Pembangunan Masyarakat.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#1B6B2F', dark: '#145224', light: '#E8F5E9' },
+          fontFamily: { sans: ['Poppins', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+  <div id="site-header"></div>
+
+  <section class="bg-gray-100 py-12 border-b border-gray-200">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Publikasi & Newsletter</h1>
+      <p class="text-gray-600 text-lg max-w-3xl">Kumpulan bacaan tentang pertanian, lingkungan, ketangguhan, dan kehidupan masyarakat.</p>
+    </div>
+  </section>
+
+  <main class="flex-grow py-16">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <!-- <div class="bg-amber-50 border border-amber-200 text-amber-900 rounded-xl p-4 mb-10" role="note">
+        Newsletter edisi 001–007 tersedia untuk diunduh.
+      </div> -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-newsletter-list></div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <button id="scrollTopBtn" aria-label="Gulir ke atas">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+  </button>
+
+  <script src="../assets/js/header.js"></script>
+  <script src="../assets/js/footer.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/publications.js"></script>
+</body>
+</html>
