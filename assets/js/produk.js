@@ -6,8 +6,8 @@ const products = [
     description: "Kaos berbahan katun berkualitas dengan logo Motivator Pembangunan Masyarakat. Nyaman dipakai untuk kegiatan lapangan maupun sehari-hari.",
     price: 150000,
     images: [
-      "../assets/images/produk/baju mpm 1.jpeg",
-      "../assets/images/produk/baju mpm 2.png",
+      "../assets/images/Produk/baju mpm 1.jpeg",
+      "../assets/images/Produk/baju mpm 2.png",
       "../assets/images/Produk/baju mpm 3.png"
     ],
     sizes: ["S", "M", "L", "XL", "XXL"],
