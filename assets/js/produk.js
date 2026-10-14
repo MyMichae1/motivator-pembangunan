@@ -75,6 +75,14 @@ function renderProductGallery(product) {
   return `
     <div class="product-gallery" data-product-gallery="${product.id}" data-image-index="0" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Galeri foto ${product.name}. Geser untuk melihat foto lain.">
       <img src="${product.images[0]}" alt="${product.name}, foto 1 dari ${imageCount}" class="product-gallery__image" loading="lazy" draggable="false">
+      ${imageCount > 1 ? `
+        <button type="button" class="product-gallery__control product-gallery__control--previous" data-gallery-step="-1" aria-label="Foto sebelumnya: ${product.name}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <button type="button" class="product-gallery__control product-gallery__control--next" data-gallery-step="1" aria-label="Foto berikutnya: ${product.name}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6"/></svg>
+        </button>
+      ` : ''}
       <span class="product-gallery__count" aria-live="polite">1 / ${imageCount}</span>
     </div>
   `;
@@ -113,6 +121,7 @@ function initializeProductGallery(gallery) {
   let isDragging = false;
 
   gallery.addEventListener('pointerdown', event => {
+    if (event.target instanceof Element && event.target.closest('.product-gallery__control')) return;
     if (event.pointerType === 'mouse' && event.button !== 0) return;
     pointerStartX = event.clientX;
     pointerStartY = event.clientY;
@@ -132,6 +141,13 @@ function initializeProductGallery(gallery) {
 
   gallery.addEventListener('pointercancel', () => { isDragging = false; });
   gallery.addEventListener('dragstart', event => event.preventDefault());
+  gallery.querySelectorAll('.product-gallery__control').forEach(control => {
+    control.addEventListener('click', event => {
+      event.preventDefault();
+      event.stopPropagation();
+      showProductGalleryImage(gallery, Number(control.dataset.galleryStep));
+    });
+  });
   gallery.addEventListener('keydown', event => {
     if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
       event.preventDefault();
