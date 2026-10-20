@@ -1300,32 +1300,34 @@ body {
 
 @media (max-width: 767px) {
   .hero.hero {
-    min-height: clamp(34rem, 78vh, 39rem);
-    min-height: clamp(34rem, 78svh, 39rem);
+    min-height: clamp(27rem, 68vh, 32rem);
+    min-height: clamp(27rem, 68svh, 32rem);
   }
   .hero-content-inner {
-    padding: 5rem 0 5.25rem;
+    width: min(100%, 34rem);
+    padding: 3.5rem 0 5.75rem;
   }
   .hero-content-inner > span {
-    margin-bottom: 1rem;
-    padding: 0.25rem 0.7rem;
-    font-size: 0.75rem;
+    margin-bottom: 0.7rem;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.68rem;
   }
   .hero-content-inner h1,
   .hero-content-inner h2 {
-    margin: 0.25rem 0 0.9rem;
-    font-size: 1.8rem;
-    line-height: 1.12;
+    margin: 0.2rem 0 0.7rem;
+    font-size: clamp(1.45rem, 6.5vw, 1.75rem);
+    line-height: 1.14;
   }
   .hero-content-inner > p {
-    margin-bottom: 1.25rem;
-    font-size: 0.95rem;
-    line-height: 1.5;
+    max-width: 31rem;
+    margin-bottom: 1rem;
+    font-size: 0.84rem;
+    line-height: 1.42;
   }
   .hero-content-inner .btn {
-    min-height: 48px !important;
-    padding: 0.65rem 1.2rem;
-    font-size: 0.95rem;
+    min-height: 44px !important;
+    padding: 0.55rem 1rem;
+    font-size: 0.84rem;
   }
   .hero .hero-prev,
   .hero .hero-next {
