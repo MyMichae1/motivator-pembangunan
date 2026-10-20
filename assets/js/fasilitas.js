@@ -15,8 +15,8 @@ const rooms = [
     price: null
   },
   {
-    id: "kamar-standar",
-    name: "Kamar Tipe 2 – Kamar Standar",
+    id: "kamar-executive",
+    name: "Kamar Tipe 2 – Kamar Executive",
     description: "Kamar praktis dan nyaman untuk kunjungan singkat atau menginap berdua, dengan kapasitas 2 orang.",
     images: [
       "../assets/images/kamar/kamar 3.png",

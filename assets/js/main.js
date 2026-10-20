@@ -230,8 +230,8 @@ const initializePage = () => {
       category: "Kegiatan MPM",
       title: "Kolaborasi untuk <span class='bg-clip-text text-transparent bg-gradient-to-r from-light to-white'>Masa Depan</span>",
       description: "Berbagai inisiatif mulai dari mitigasi perubahan iklim hingga pembangunan perdamaian bersama komunitas lokal.",
-      link: "pages/donasi.html",
-      cta: "Dukung Kami"
+      link: "pages/blog.html",
+      cta: "Blog Kami"
     }
   ];
 
