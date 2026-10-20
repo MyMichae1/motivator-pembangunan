@@ -201,38 +201,38 @@ const initializePage = () => {
      6. Hero Carousel Logic
      ========================================= */
   const heroSlidesData = [
-    {
-      image: "https://penamasmotivator.org/wp-content/uploads/2024/05/video-tumb.png.webp",
-      category: "Pertanian",
-      title: "Informasi & Solusi <span class='bg-clip-text text-transparent bg-gradient-to-r from-light to-white'>Budidaya Pertanian</span>",
-      description: "Menyediakan informasi, pendampingan, dan solusi untuk mendukung pengembangan budidaya pertanian serta pemberdayaan masyarakat.",
-      link: "pages/kegiatan.html",
-      cta: "Lihat Kegiatan"
-    },
-    {
-      image: "https://penamasmotivator.org/wp-content/uploads/2024/05/img-sec2.jpg.webp",
-      category: "Pemberdayaan Masyarakat",
-      title: "Bersama Membangun <span class='bg-clip-text text-transparent bg-gradient-to-r from-light to-white'>Perubahan Positif</span>",
-      description: "Mendampingi masyarakat pedesaan di Tana Toraja untuk kemandirian ekonomi, sosial, dan ekologi berkelanjutan.",
-      link: "pages/tentang.html",
-      cta: "Pelajari Lebih Lanjut"
-    },
-    {
-      image: "https://rycam.id/wp-content/uploads/2025/12/25-1200x675.png",
-      category: "Pelatihan & Pengembangan",
-      title: "Meningkatkan <span class='bg-clip-text text-transparent bg-gradient-to-r from-light to-white'>Kapasitas Masyarakat</span>",
-      description: "Melalui pelatihan intensif, kami membekali pemuda dan petani dengan keterampilan untuk beradaptasi dan berkembang di daerah terpencil.",
-      link: "pages/program.html",
-      cta: "Lihat Program"
-    },
-    {
-      image: "https://penamasmotivator.org/wp-content/uploads/2026/05/C7821T01-1024x576.jpg.webp",
-      category: "Kegiatan MPM",
-      title: "Kolaborasi untuk <span class='bg-clip-text text-transparent bg-gradient-to-r from-light to-white'>Masa Depan</span>",
-      description: "Berbagai inisiatif mulai dari mitigasi perubahan iklim hingga pembangunan perdamaian bersama komunitas lokal.",
-      link: "pages/blog.html",
-      cta: "Blog Kami"
-    }
+  {
+    image: "https://penamasmotivator.org/wp-content/uploads/2024/05/video-tumb.png.webp",
+    category: "Pertanian Adaptif Iklim",
+    title: "Pertanian Adaptif terhadap <span class='bg-clip-text text-transparent bg-gradient-to-r from-light to-white'>Perubahan Iklim</span>",
+    description: "Mendorong ketahanan pangan melalui inovasi pertanian, penguatan kapasitas petani, dan praktik budidaya berkelanjutan.",
+    link: "pages/kegiatan.html",
+    cta: "Lihat Kegiatan"
+  },
+  {
+    image: "https://penamasmotivator.org/wp-content/uploads/2024/05/img-sec2.jpg.webp",
+    category: "Pemberdayaan Masyarakat",
+    title: "Memperkuat Ketahanan <span class='bg-clip-text text-transparent bg-gradient-to-r from-light to-white'>Masyarakat Berkelanjutan</span>",
+    description: "Memperkuat kemandirian sosial-ekonomi masyarakat melalui pendekatan partisipatif dan pengembangan potensi lokal.",
+    link: "pages/tentang.html",
+    cta: "Pelajari Lebih Lanjut"
+  },
+  {
+    image: "https://rycam.id/wp-content/uploads/2025/12/25-1200x675.png",
+    category: "Pelatihan & Pengembangan",
+    title: "Penguatan Kapasitas <span class='bg-clip-text text-transparent bg-gradient-to-r from-light to-white'>dan Pengetahuan</span>",
+    description: "Meningkatkan kompetensi petani dan pemuda dalam mengembangkan solusi lokal untuk menghadapi tantangan iklim dan pembangunan.",
+    link: "pages/program.html",
+    cta: "Lihat Program"
+  },
+  {
+    image: "https://penamasmotivator.org/wp-content/uploads/2026/05/C7821T01-1024x576.jpg.webp",
+    category: "Kolaborasi dan Aksi Iklim",
+    title: "Kolaborasi untuk <span class='bg-clip-text text-transparent bg-gradient-to-r from-light to-white'>Solusi Iklim</span>",
+    description: "Mendorong aksi adaptasi dan mitigasi perubahan iklim melalui kolaborasi komunitas dan pemangku kepentingan.",
+    link: "pages/blog.html",
+    cta: "Blog Kami"
+  }
   ];
 
   const sliderContainer = document.getElementById('hero-slides-container');
