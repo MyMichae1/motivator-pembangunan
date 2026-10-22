@@ -1497,7 +1497,6 @@ body {
 .organization-chart {
   max-width: 1600px;
   margin-inline: auto;
-  overflow-x: auto;
   padding: 1rem 0 1.25rem;
   background: #fff;
 }
@@ -1506,7 +1505,6 @@ body {
   width: 100%;
   height: auto;
   max-width: 100%;
-  min-width: 900px;
   margin-inline: auto;
   object-fit: contain;
 }
@@ -1519,6 +1517,9 @@ body {
   }
   .organization-section__header p {
     font-size: 0.98rem;
+  }
+  .organization-chart {
+    padding: 0.75rem;
   }
 }
 
