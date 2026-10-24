@@ -1,6 +1,11 @@
 (() => {
+  const recipient = 'MTVkondoran@gmail.com';
   const form = document.getElementById('contactMessageForm');
   if (!form) return;
+
+  const status = document.getElementById('contactFormStatus');
+  const fallback = document.getElementById('contactFormFallback');
+  const fallbackBody = document.getElementById('contactFallbackBody');
 
   form.addEventListener('submit', event => {
     event.preventDefault();
@@ -17,10 +22,28 @@
       '',
       message
     ].join('\n');
-    const mailtoUrl = new URL('mailto:mtvkondoran@gmail.com');
-    mailtoUrl.searchParams.set('subject', subject);
-    mailtoUrl.searchParams.set('body', body);
 
-    window.location.href = mailtoUrl.href;
+    const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    if (status) {
+      status.textContent = 'Membuka draf email. Pesan belum dikirim sampai Anda menekan tombol Kirim di aplikasi email.';
+    }
+    if (fallbackBody) {
+      fallbackBody.value = body;
+    }
+    if (fallback) {
+      fallback.classList.add('hidden');
+    }
+
+    window.location.href = mailtoUrl;
+
+    window.setTimeout(() => {
+      if (fallback) {
+        fallback.classList.remove('hidden');
+      }
+      if (status) {
+        status.textContent = 'Jika aplikasi email tidak terbuka, gunakan aplikasi email yang terpasang atau salin alamat tujuan dan isi pesan di bawah ini. Pesan belum dikirim oleh website.';
+      }
+    }, 1500);
   });
 })();

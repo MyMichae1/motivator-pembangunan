@@ -409,7 +409,71 @@ const initializePage = () => {
   });
 };
 
+let deferredInstallPrompt = null;
+
+function isAndroidDevice() {
+  return /Android/i.test(navigator.userAgent);
+}
+
+function showInstallControls(mode) {
+  document.querySelectorAll('[data-pwa-install]').forEach(button => {
+    button.classList.remove('hidden');
+    button.textContent = mode === 'prompt' ? 'Pasang MPM' : 'Cara pasang MPM';
+  });
+}
+
+function setupInstallControls() {
+  if (!isAndroidDevice()) return;
+
+  document.querySelectorAll('[data-pwa-install]').forEach(button => {
+    button.addEventListener('click', async () => {
+      if (!deferredInstallPrompt) {
+        window.alert('Di Chrome Android, buka menu tiga titik lalu pilih Tambahkan ke layar utama atau Instal aplikasi.');
+        return;
+      }
+
+      deferredInstallPrompt.prompt();
+      await deferredInstallPrompt.userChoice;
+      deferredInstallPrompt = null;
+      button.classList.add('hidden');
+    });
+  });
+}
+
+function registerPwa() {
+  if (!('serviceWorker' in navigator)) return;
+
+  const manifestLink = document.querySelector('link[rel="manifest"]');
+  const manifestUrl = manifestLink ? new URL(manifestLink.href, document.baseURI) : new URL('./manifest.json', document.baseURI);
+  const serviceWorkerUrl = new URL('sw.js', manifestUrl);
+  const serviceWorkerScope = new URL('./', serviceWorkerUrl).pathname;
+  navigator.serviceWorker.register(serviceWorkerUrl, { scope: serviceWorkerScope })
+    .catch(error => console.error('PWA service worker gagal didaftarkan.', error));
+
+  window.addEventListener('beforeinstallprompt', event => {
+    event.preventDefault();
+    deferredInstallPrompt = event;
+    showInstallControls('prompt');
+  });
+
+  window.addEventListener('appinstalled', () => {
+    deferredInstallPrompt = null;
+    document.querySelectorAll('[data-pwa-install]').forEach(button => button.classList.add('hidden'));
+  });
+
+  setupInstallControls();
+  document.addEventListener('site-header:loaded', () => {
+    setupInstallControls();
+    if (isAndroidDevice()) showInstallControls(deferredInstallPrompt ? 'prompt' : 'instructions');
+  }, { once: true });
+
+  if (isAndroidDevice() && !deferredInstallPrompt) {
+    window.setTimeout(() => showInstallControls('instructions'), 1500);
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  registerPwa();
   const headerSlot = document.getElementById('site-header');
   if (headerSlot && headerSlot.dataset.loadError !== 'true') {
     document.addEventListener('site-header:loaded', initializePage, { once: true });

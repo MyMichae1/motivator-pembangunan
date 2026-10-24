@@ -77,21 +77,3 @@ document.querySelectorAll('[data-home-carousel]').forEach(carousel => {
   }
 
 });
-
-  const scrollByCard = direction => {
-    const card = track.firstElementChild;
-    if (!card) return;
-
-    const gap = Number.parseFloat(getComputedStyle(track).columnGap) || 0;
-    viewport.scrollBy({
-      left: direction * (card.getBoundingClientRect().width + gap),
-      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
-    });
-  };
-
-  previousButton.addEventListener('click', () => scrollByCard(-1));
-  nextButton.addEventListener('click', () => scrollByCard(1));
-  viewport.addEventListener('scroll', updateControls, { passive: true });
-  window.addEventListener('resize', updateControls);
-  updateControls();
-});
