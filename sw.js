@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'mpm-pwa-v2';
+const CACHE_VERSION = 'mpm-pwa-v3';
 const CORE_CACHE = `${CACHE_VERSION}-core`;
 const ASSET_CACHE = `${CACHE_VERSION}-assets`;
 

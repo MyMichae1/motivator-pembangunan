@@ -415,11 +415,38 @@ function isAndroidDevice() {
   return /Android/i.test(navigator.userAgent);
 }
 
+function isStandaloneMode() {
+  return window.matchMedia('(display-mode: standalone)').matches || window.matchMedia('(display-mode: fullscreen)').matches;
+}
+
+function hideInstallControls() {
+  document.querySelectorAll('[data-pwa-install]').forEach(button => button.classList.add('hidden'));
+}
+
 function showInstallControls(mode) {
   document.querySelectorAll('[data-pwa-install]').forEach(button => {
+    if (isStandaloneMode()) {
+      button.classList.add('hidden');
+      return;
+    }
     button.classList.remove('hidden');
-    button.textContent = mode === 'prompt' ? 'Pasang MPM' : 'Cara pasang MPM';
+    button.textContent = 'Download Aplikasi MPM';
   });
+}
+
+function openInstallHelp() {
+  const help = document.getElementById('pwaInstallHelp');
+  if (!help) return;
+  help.classList.remove('hidden');
+  help.classList.add('flex');
+  help.querySelector('[data-pwa-install-close]')?.focus();
+}
+
+function closeInstallHelp() {
+  const help = document.getElementById('pwaInstallHelp');
+  if (!help) return;
+  help.classList.add('hidden');
+  help.classList.remove('flex');
 }
 
 function setupInstallControls() {
@@ -428,15 +455,23 @@ function setupInstallControls() {
   document.querySelectorAll('[data-pwa-install]').forEach(button => {
     button.addEventListener('click', async () => {
       if (!deferredInstallPrompt) {
-        window.alert('Di Chrome Android, buka menu tiga titik lalu pilih Tambahkan ke layar utama atau Instal aplikasi.');
+        openInstallHelp();
         return;
       }
 
       deferredInstallPrompt.prompt();
-      await deferredInstallPrompt.userChoice;
+      const choice = await deferredInstallPrompt.userChoice;
       deferredInstallPrompt = null;
-      button.classList.add('hidden');
+      if (choice.outcome === 'dismissed') showInstallControls('instructions');
     });
+  });
+
+  document.querySelectorAll('[data-pwa-install-close]').forEach(button => {
+    button.addEventListener('click', closeInstallHelp);
+  });
+
+  document.getElementById('pwaInstallHelp')?.addEventListener('click', event => {
+    if (event.target.id === 'pwaInstallHelp') closeInstallHelp();
   });
 }
 
@@ -451,6 +486,7 @@ function registerPwa() {
     .catch(error => console.error('PWA service worker gagal didaftarkan.', error));
 
   window.addEventListener('beforeinstallprompt', event => {
+    if (!isAndroidDevice() || isStandaloneMode()) return;
     event.preventDefault();
     deferredInstallPrompt = event;
     showInstallControls('prompt');
@@ -458,9 +494,11 @@ function registerPwa() {
 
   window.addEventListener('appinstalled', () => {
     deferredInstallPrompt = null;
-    document.querySelectorAll('[data-pwa-install]').forEach(button => button.classList.add('hidden'));
+    hideInstallControls();
+    closeInstallHelp();
   });
 
+  if (isStandaloneMode()) hideInstallControls();
   setupInstallControls();
   document.addEventListener('site-header:loaded', () => {
     setupInstallControls();
